@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    - role: common
+    - role: metal
+    - role: moar
