@@ -42,6 +42,7 @@
 - name: install nix packages
   shell: . {{ ansible_user_dir }}/.nix-profile/etc/profile.d/nix.sh && nix-env -if {{ ansible_user_dir }}/Dotfiles/nix/manifest.nix
   changed_when: no
+  ignore_errors: yes
   tags:
     - pkg
 
