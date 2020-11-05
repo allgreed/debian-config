@@ -7,7 +7,7 @@ TAGS := ''
 all: galaxy_roles ## full run, with all the bells and whistles
 	ansible-playbook -K -l local --inventory=$(INVENTORY) playbook.yml
 some: galaxy_roles ## run main playbook with only the stuff specified in TAGS (default: run nothing)
-	ansible-playbook -K -l local --inventory=$(INVENTORY) --tags=$(TAGS) --skip-tags='pkg' playbook.yml
+	ansible-playbook -K -l local --inventory=$(INVENTORY) --tags=$(TAGS) playbook.yml
 
 test: galaxy_roles ## legacy
 	ansible-playbook  -K -l local --inventory=$(INVENTORY) testbook.yml
