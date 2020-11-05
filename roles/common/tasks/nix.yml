@@ -26,13 +26,12 @@
       become: yes
 
     - name: create temporary directory for Nix installator
-      command: mktemp --suffix -nix-installator
+      command: mktemp --suffix -nix-installator --dry-run
       register: tmpfile
 
     - name: download Nix installation script
       get_url:
         url: https://nixos.org/nix/install 
-        checksum: sha512:f6bd178c35d13cd8ad664450d6bfdaa054cd0abe1a094912ac6a1eced6d41f5ff7052041b25406df4b301e802c131970905ebe790566a7f89efcf231b14b80bf
         dest: "{{ tmpfile.stdout }}"
         mode: u+x
 
