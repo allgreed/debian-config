@@ -7,10 +7,5 @@
         state: latest
       become: yes 
       loop:
-        - sudo
-        - python-pip
-
-    - name: install latest ansible
-      pip:
-        state: latest
-        name: ansible
+        - python3-setuptools
+        - python3-pip
