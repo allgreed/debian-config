@@ -38,6 +38,8 @@
 
     - hexcurse # hex editor
   become: yes
+  tags:
+    - pkg
 
 - name: install Python packages
   pip:
@@ -47,6 +49,8 @@
     executable: pip3
     state: latest
     extra_args: --user
+  tags:
+    - pkg
 
 - include_tasks: browser.yml
   tags:
