@@ -8,7 +8,6 @@
           include "shift(both_capslock_cancel)" // both Shifts pressed == CapsLock, press one Shift to cancel
     insertafter: 'xkb_symbols \"basic\" \{'
     marker: "\n// {mark} ANSIBLE MANAGED BLOCK\n"
-    regexp: both_capslock_cancel
   notify:
     - reload keyboard layout
 
