@@ -1,5 +1,7 @@
 #!/bin/bash
-ANSIBLE_LOCATION=~/Dotfiles/ansible
+set -o pipefail
+set -e
+ANSIBLE_LOCATION=~/debian-config
 
 echo "You will be prompted for sudo password twice"
 ansible-playbook -K -l local -i $ANSIBLE_LOCATION/inventory $ANSIBLE_LOCATION/bootstrap.yml 
