@@ -8,18 +8,12 @@ This repo exists, because some companies are particular about which distribution
 
 - git
 - ansible >=2.6.3
-- python2 >=2.7.13 (required by ansible)
-
-### Prerequisites installation (with apt)
-
-```
-sudo apt-get update
-sudo apt install -y git python ansible sudo
-```
+- python3
 
 ## Installation
 
 ```sh
 git clone https://github.com/allgreed/debian-config.git ~/debian-config
+./prerequisites
 ~/debian-config/run
 ```
