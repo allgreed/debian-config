@@ -23,6 +23,8 @@
 
     - lm-sensors
 
+    - gimp
+
     - vrms # Virtual Richard M. Stallman <- the best package ever!
 
     # Volume control
