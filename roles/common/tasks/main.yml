@@ -6,16 +6,20 @@
     - python3-pip
 
     - vim-gtk # vim with scripting languages and X11 integration
-    - tmux # terminal multiplexer
-    - htop # process diagnostics
-    - ranger # file exploler
-    - make # build / script automation
+    - tmux
+    - htop
+    - ranger
+    - make
     - curl 
     - net-tools
     - unzip
-    - expect # interactive script automation utility
-    - jq # manipulate JSON
+    - expect
+    - jq
     - direnv
+    - tree
+    - entr
+    - whois # mkpasswd ;d
+    - xclip
 
     - network-manager
   become: yes
